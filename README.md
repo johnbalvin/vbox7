@@ -36,6 +36,7 @@ https://www.reddit.com/r/DataHoarder/comments/19d8omx/this_videosharing_website_
             log.Println(err)
             return
         }
+        log.Printf("finalVideoURL: *%s*\n", videoURL)
         video, contentType, err := vbox7.DowloadVideoFromFinalVideoURL(videoURL, nil)
         if err != nil {
             log.Println(err)
@@ -63,6 +64,7 @@ https://www.reddit.com/r/DataHoarder/comments/19d8omx/this_videosharing_website_
             log.Println(err)
             return
         }
+        log.Printf("finalVideoURL: *%s*\n", videoURL)
         video, contentType, err := vbox7.DowloadVideoFromFinalVideoURL(videoURL, nil)
         if err != nil {
             log.Println(err)
