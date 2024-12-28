@@ -59,7 +59,7 @@ https://www.reddit.com/r/DataHoarder/comments/19d8omx/this_videosharing_website_
     )
     func main(){
         pageID:="9b5b912a3f"
-        videoURL, err := vbox7.vbox7GetFinalVideoURLFromPageID(pageID, nil)
+        videoURL, err := vbox7.GetFinalVideoURLFromPageID(pageID, nil)
         if err != nil {
             log.Println(err)
             return
